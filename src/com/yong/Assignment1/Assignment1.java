@@ -1,4 +1,4 @@
-package com.yong;
+package com.yong.Assignment1;
 
 public class Assignment1 {
     public static void main(String[] args) {
