@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Assignment2 {
     static ArrayList<Record> recordList = new ArrayList<>();
-    static int studentCOUNT = 1;
+    static int studentCOUNT = 100;
 
     public static void main(String[] args){
         for(int i = 0; i < studentCOUNT; i++){
