@@ -31,9 +31,11 @@ public class Assignment2 {
             recordList.add(student);
         }
 
-        System.out.println("성 명   국어  수학  영어  과학  총점");
+        System.out.println("______________________________________");
+        System.out.println("|  성명  | 국어 | 수학 | 영어 | 과학 | 총점 |");
         for(Record r : recordList){
-            System.out.printf("%3s %4d %4d %4d %4d %4d\n", r.getStudentName(), r.getScoreKorean(), r.getScoreMath(), r.getScoreEnglish(), r.getScoreScience(), r.getScoreSum());
+            System.out.printf("| %3s | %3d | %3d | %3d | %3d | %3d |\n", r.getStudentName(), r.getScoreKorean(), r.getScoreMath(), r.getScoreEnglish(), r.getScoreScience(), r.getScoreSum());
         }
+        System.out.println("______________________________________");
     }
 }
