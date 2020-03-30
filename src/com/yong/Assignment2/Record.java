@@ -1,22 +1,44 @@
 package com.yong.Assignment2;
 
 public class Record {
-    int IdNumber;
-    int Korean;
-    int Math;
-    int English;
-    int Science;
-    int sum;
+    String studentName;
+    int scoreKorean;
+    int scoreMath;
+    int scoreEnglish;
+    int scoreScience;
+    int scoreSum;
 
+    public Record(String NAME, int KOR, int MATH, int ENGLISH, int SCIENCE){
+        studentName = NAME;
+        scoreKorean = KOR;
+        scoreMath = MATH;
+        scoreEnglish =ENGLISH;
+        scoreScience = SCIENCE;
 
-    public Record(int x, int y, int z, int a, int b ) {
-        IdNumber = x;
-        Korean = y;
-        Math = z;
-        English =a;
-        Science = b;
+        scoreSum = scoreKorean + scoreMath + scoreEnglish + scoreScience;
     }
-    public int getIdNumber () {
-        return IdNumber;
+
+    public String getStudentName(){
+        return studentName;
+    }
+
+    public int getScoreKorean(){
+        return scoreKorean;
+    }
+
+    public int getScoreMath(){
+        return scoreMath;
+    }
+
+    public int getScoreEnglish(){
+        return scoreEnglish;
+    }
+
+    public int getScoreScience(){
+        return scoreScience;
+    }
+
+    public int getScoreSum(){
+        return scoreSum;
     }
 }
